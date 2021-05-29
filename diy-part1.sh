@@ -14,4 +14,7 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-#sed -i '$a src-git passwall https://github.com/xiaorouji/openwrt-passwall' feeds.conf.default
+cd openwrt/package/lean
+git clone https://github.com/lisaac/luci-app-dockerman.git
+git clone https://github.com/vernesong/OpenClash.git
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
