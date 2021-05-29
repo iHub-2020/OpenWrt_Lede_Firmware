@@ -14,6 +14,6 @@
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-git clone https://github.com/lisaac/luci-app-dockerman.git/openwrt/package/lean
-git clone https://github.com/vernesong/OpenClash.git/openwrt/package/lean
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git/openwrt/package/lean
+git clone https://github.com/lisaac/luci-app-dockerman.git /openwrt/package/lean
+git clone https://github.com/vernesong/OpenClash.git /openwrt/package/lean
+git clone https://github.com/rufengsuixing/luci-app-adguardhome.git /openwrt/package/lean
