@@ -14,9 +14,11 @@
 sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
 # Add a feed source
-echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-git clone https://github.com/lisaac/luci-app-dockerman.git
-git clone https://github.com/vernesong/OpenClash.git
+rm -rf package/helloworld
+git clone --depth=1 https://github.com/fw876/helloworld.git package/helloworld
 git clone https://github.com/rufengsuixing/luci-app-adguardhome.git
+
+# git clone https://github.com/lisaac/luci-app-dockerman.git
+# git clone https://github.com/vernesong/OpenClash.git
 # echo 'scr-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
 # git clone https://github.com/xiaorouji/openwrt-passwall.git package/xiaorouji
